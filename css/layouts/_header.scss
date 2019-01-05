@@ -1,0 +1,187 @@
+@media (min-width: 1025px) {
+  .header{
+    margin: 55px 0 0 4.01%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    font-family: $font;
+    .headerBlock{
+      display: flex;
+      img{
+        width: 150px;
+      }
+      .menu{
+        margin-left: 40px;
+        display: flex;
+        justify-content: space-between;
+        width: 400px;
+        a{
+          opacity: 0.5;
+          height: 20px;
+          font-size: 1em;
+          display: inline;
+          color: black;
+          text-decoration: none;
+          padding: 0 10px 10px 10px;
+          &:hover{
+            transition: 0.4s all;
+            transform: rotate(45deg);
+          }
+          &.active{
+            opacity: 1;
+            font-weight: 700;
+          }
+        }
+      }
+      .menuComplex{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        width: 400px;
+        margin-left: 40px;
+        .menuNavigation{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          a{
+            opacity: 0.5;
+            height: 20px;
+            font-size: 1em;
+            display: inline;
+            color: black;
+            text-decoration: none;
+            padding: 0 10px 10px 10px;
+            &:hover{
+              transition: 0.4s all;
+              transform: rotate(45deg);
+            }
+            &.active{
+              opacity: 1;
+              font-weight: 700;
+            }
+          }
+        }
+        .menuAnchors{
+          width: 90%;
+          display: flex;
+          justify-content: space-between;
+          a{
+            opacity: 1;
+            height: 20px;
+            font-size: 1em;
+            display: inline;
+            color: black;
+            text-decoration: none;
+            padding: 5px 10px 0px 10px;
+            &:hover{
+              transition: 0.4s all;
+              transform: rotate(-25deg);
+            }
+          }
+        }
+        .menuAnchorsMobile{
+          display: none;
+        }
+      }
+    }
+    .phone{
+      font-size: 1em;
+      line-height: 1.5em;
+      span{
+        font-weight: 700;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 414px){
+  .header{
+    padding: 17px 0 0 0;
+    margin: 0 auto;
+    .headerBlock{
+      margin: 0 auto;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      width: 265px;
+      font-family: $font;
+      .logo{
+        display: none;
+      }
+      .logoMobile{
+        width: 170px;
+      }
+      .menu{
+        margin-top: 17px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        a{
+          color: black;
+          text-decoration: none;
+          font-size: 0.8em;
+          &:hover{
+            transition: 0.4s all;
+            transform: rotate(360deg);
+          }
+          &.active{
+            border-bottom: 1px solid black;
+            line-height: 1.1em;
+          }
+        }
+      }
+      .menuComplex{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+        .menuNavigation{
+          margin-top: 19px;
+          width: 265px;
+          display: flex;
+          justify-content: space-between;
+          a{
+            color: black;
+            text-decoration: none;
+            font-size: 0.8em;
+            &:hover{
+              transition: 0.4s all;
+              transform: rotate(360deg);
+            }
+            &.active{
+              border-bottom: 1px solid black;
+              line-height: 1.1em;
+            }
+          }
+        }
+        .menuAnchors{
+          display: none;
+        }
+        .menuAnchorsMobile{
+          margin-top: 10px;
+          width: 100vw;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: black;
+          .anchorLinks{
+            width: 217px;
+            display: flex;
+            justify-content: space-between;
+            a{
+              color: white;
+              text-decoration: none;
+              font-size: 0.8em;
+            }
+          }
+        }
+      }
+    }
+
+    .phone{
+      display: none;
+    }
+  }
+}

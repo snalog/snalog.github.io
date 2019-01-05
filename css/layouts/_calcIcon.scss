@@ -1,0 +1,24 @@
+.calcImage{
+  position: absolute;
+}
+
+@media (min-width: 1025px){
+  .calcImage{
+    width: 4.479%;
+    transform: translate3d(calc(50vw - (4.479% / 2)), 30vh, 0);
+  }
+}
+
+@media (min-width: 415px) and (max-width: 1024px){
+  .calcImage{
+    width: 9%;
+    transform: translate3d(calc(50vw - (9% / 2)), 30vh, 0);
+  }
+}
+
+@media (max-width: 414px){
+  .calcImage{
+    width: 60px;
+    transform: translate3d(calc(50vw - 30px), 28vh, 0);
+  }
+}
